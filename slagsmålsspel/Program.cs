@@ -1,24 +1,30 @@
-﻿//SLUMP
+﻿//WHILE-LOOP
 
-//Random generator = new Random();
+int ironmanHP = 100;
+int thanosHP = 100;
 
-//int slumptal = generator.Next(10, 20);
-
-//Console.WriteLine(slumptal);
-
-
-
-//WHITE-LOOP
-
-int tal = 100;
-
-while (tal > 0)
+while (ironmanHP > 0 && thanosHP > 0)
 {
-Console.WriteLine(tal);
-tal--;
+Random generator = new Random();
+int idmg = generator.Next(5, 15);
+int tdmg = generator.Next(5, 15);
+
+Console.WriteLine($"ironman {ironmanHP}");
+Console.WriteLine($"thanos {thanosHP}");
+ironmanHP -= idmg;
+thanosHP -= tdmg;
+Console.ReadKey();
 }
 
-Console.WriteLine("FÄRDIG");
+if (ironmanHP < 0);
+{
+Console.WriteLine("Blod lost to thanos");
+}
+
+if (thanosHP < 0);
+{
+Console.WriteLine("You lost to ironman HAH");    
+}
 
 
 Console.ReadLine();
