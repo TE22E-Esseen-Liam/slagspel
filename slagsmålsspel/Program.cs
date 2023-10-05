@@ -1,4 +1,8 @@
-﻿//WHILE-LOOP
+﻿using System.Runtime.CompilerServices;
+
+void restartGame(){
+
+}
 
 int ironmanHP = 100;
 int thanosHP = 100;
@@ -16,16 +20,35 @@ Console.WriteLine("");
 ironmanHP -= idmg;
 thanosHP -= tdmg;
 Console.ReadKey();
+Console.Clear();
 }
+
 
 if (ironmanHP < 0)
 {
 Console.WriteLine("You lost to Thanos");
+Console.ReadKey();
+Console.Clear();
+Console.WriteLine("Press any button to exit game");
 }
 
-if (thanosHP < 0)
+else if (thanosHP < 0)
 {
-Console.WriteLine("You lost to Ironman");    
+Console.WriteLine("You lost to Ironman");
+Console.ReadKey();
+Console.Clear();
+Console.WriteLine("Press any button to exit game");    
+}
+
+else if (thanosHP == ironmanHP)
+{
+Console.WriteLine("It's a draw... try again");
+
+}
+
+
+if (key == 'x' || key == 'X'){
+restartGame();
 }
 
 
