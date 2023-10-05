@@ -9,21 +9,23 @@ Random generator = new Random();
 int idmg = generator.Next(5, 15);
 int tdmg = generator.Next(5, 15);
 
-Console.WriteLine($"ironman {ironmanHP}");
-Console.WriteLine($"thanos {thanosHP}");
+Console.WriteLine($"Ironman {ironmanHP}HP");
+Console.WriteLine($"Thanos {thanosHP}HP");
+Console.WriteLine("Press [ENTER] to continue");
+Console.WriteLine("");
 ironmanHP -= idmg;
 thanosHP -= tdmg;
 Console.ReadKey();
 }
 
-if (ironmanHP < 0);
+if (ironmanHP < 0)
 {
-Console.WriteLine("Blod lost to thanos");
+Console.WriteLine("You lost to Thanos");
 }
 
-if (thanosHP < 0);
+if (thanosHP < 0)
 {
-Console.WriteLine("You lost to ironman HAH");    
+Console.WriteLine("You lost to Ironman");    
 }
 
 
