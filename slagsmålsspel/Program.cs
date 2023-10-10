@@ -48,9 +48,9 @@ Console.WriteLine("It's a draw... try again");
 }
 
 
-if (key == 'x' || key == 'X'){
-restartGame();
-}
+//if (key == 'x' || key == 'X'){
+//restartGame();
+//}
 
 
 Console.ReadLine();
