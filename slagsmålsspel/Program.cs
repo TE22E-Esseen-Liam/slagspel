@@ -7,6 +7,7 @@ void restartGame(){
 int ironmanHP = 100;
 int thanosHP = 100;
 
+
 while (ironmanHP > 0 && thanosHP > 0)
 {
 Random generator = new Random();
