@@ -1,8 +1,8 @@
 ﻿using System.Runtime.CompilerServices;
 
-void restartGame(){
+//void restartGame(){
 
-}
+//}
 
 int ironmanHP = 100;
 int thanosHP = 100;
